@@ -16,7 +16,9 @@
     "claudia:test": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
     "test": "npm run build && jest",
     "remap-istanbul:remap": "remap-istanbul -i coverage/coverage-final.json -t html -o html-report",
-    "remap-istanbul:coverage": "npm test -- --coverage && npm run remap-istanbul:remap"
+    "remap-istanbul:coverage-html": "npm test -- --coverage && npm run remap-istanbul:remap",
+    "remap-istanbul:coverage": "cat coverage/coverage-final.json | ./node_modules/.bin/remap-istanbul -o coverage/coverage.json",
+    "coverage": "npm test -- --coverage && npm run remap-istanbul:coverage"
   },
   "keywords": [],
   "author": "Marcellin Nshimiyimana <nmarcellin2@gmail.com>",
