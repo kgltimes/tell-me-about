@@ -1,5 +1,7 @@
 # tell-me-about
 
+[![Build Status](https://travis-ci.org/kgltimes/tell-me-about.svg?branch=master)](https://travis-ci.org/kgltimes/tell-me-about)
+
 Bot that explains to people important terms (such as famous people and place), that they find while reading news.
 
 ## Development
