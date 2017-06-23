@@ -1,6 +1,6 @@
 # tell-me-about
 
-[![Build Status][travis-image]][travis-url] [![codecov][codecov-image][codecov-url] [![Dependency Status][dependency-image]][dependency-url] [![Code Climate][climate-image]][climate-url] [![MIT License][license-image]][license-url]
+[![Build Status][travis-image]][travis-url] [![codecov][codecov-image][codecov-url]] [![Dependency Status][dependency-image]][dependency-url] [![Code Climate][climate-image]][climate-url] [![MIT License][license-image]][license-url]
 
 
 Bot that explains to people important terms (such as famous people and place), that they find while reading news.
