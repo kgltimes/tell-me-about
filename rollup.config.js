@@ -6,8 +6,9 @@ import uglify from 'rollup-plugin-uglify';
 export default {
   entry: 'es6/index.js',
   format: 'cjs',
+  external: ['node-fetch'],
   plugins: [
-    resolve(),
+    resolve({jsnext: true}),
     babel({
       exclude: 'node_modules/**' // only transpile our source code
     }),

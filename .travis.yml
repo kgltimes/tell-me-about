@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 6
+install:
+  - npm install -g codecov
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
@@ -13,6 +15,7 @@ script:
 # In the case where travis is setup to build PR updates only, 
 # uncomment the line below
 # - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+- codecov
 env:
   global:
     - CC_TEST_REPORTER_ID=efd30be0bdc784c7136ca29b7d1f0f020a8eba6cb7dd5ab7aac97626ccb7de7b

@@ -33,13 +33,13 @@ const context = {
 describe('tell me about', () => {
     
     // required by axios
-    beforeEach(function () {
-        moxios.install()
-    });
+    // beforeEach(function () {
+    //     moxios.install()
+    // });
 
-    afterEach(function () {
-        moxios.uninstall()
-    });
+    // afterEach(function () {
+    //     moxios.uninstall()
+    // });
 
 
     test('Finds Information about Rwanda', () => {

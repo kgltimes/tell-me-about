@@ -20,6 +20,7 @@
   "author": "Marcellin Nshimiyimana <nmarcellin2@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/node-fetch": "^1.6.7",
     "babel-cli": "^6.24.1",
     "babel-plugin-async-to-promises": "^1.0.5",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -27,20 +28,22 @@
     "babel-preset-latest": "^6.24.1",
     "claudia": "^2.13.0",
     "jest": "^20.0.4",
-    "moxios": "^0.4.0",
     "rollup": "^0.43.0",
     "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "typescript": "^2.3.4"
   },
   "dependencies": {
-    "axios": "^0.16.2"
+    "node-fetch": "^1.7.1"
   },
   "jest": {
     "coverageReporters": [
       "lcov",
       "text"
-    ]
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }

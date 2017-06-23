@@ -1,6 +1,5 @@
+import * as axios from './custom-axios';
 
-declare var require: any;
-const axios = require('axios');
 import { MRTRAINER_HOST_ADDRESS, TOPTEN_HOST_ADDRESS } from './config';
 
 /*
@@ -63,12 +62,12 @@ export class KnowledgeProvider {
     let prefix = prefixList.find(p => phrase.trim().toLowerCase().search(p) === 0);
 
     return phrase.trim().toLowerCase()
-    .replace(prefix||'', '')
-    .replace('\?', '').trim();
+      .replace(prefix || '', '')
+      .replace('\?', '').trim();
     // @TODO we should remove the question mark too
   }
   // END QA-PAIR
-  
+
 
   // save the 10 articles/audio/videos links found today
 
@@ -91,13 +90,14 @@ export class KnowledgeProvider {
       })
       .catch(this.handleError);
   }
-  private _makeHttpPostRequest(post_url: string, post_data: any): Promise<any> {
+  private _makeHttpPostRequest(post_url: string, body: any): Promise<any> {
 
     // let body = JSON.stringify(post_data);
     // let headers = new Headers({ 'Content-Type': 'application/json' });
+    let headers = [{ 'Content-Type': 'application/json' }];
     // let options = new RequestOptions({ headers: headers });
 
-    return axios.post(post_url, post_data)
+    return axios.post(post_url, body)
       .then((res: any) => {
         console.log('http res', res.data);
         let dataJson = res.data;
@@ -169,7 +169,7 @@ export class KnowledgeProvider {
       .then((output: any) => {
         // @TODO add CORS header to the server
         console.log('[HeadlinePage] findRealSource', output.headers, output.data);
-        
+
         let entities = output.data;
         if (entities.length && entities.length > 0) {
           entities = entities.filter((e: any) => !!e.url); // only entities with source are important
@@ -207,7 +207,7 @@ export class KnowledgeProvider {
 
         return { value, source, timeNow: new Date() };
       })
-      // .toPromise();
+    // .toPromise();
   }
 
   // START help functions
