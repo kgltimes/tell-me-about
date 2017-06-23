@@ -36,8 +36,8 @@ export AWS_PROFILE=<profile-name>
 [travis-url]: https://travis-ci.org/kgltimes/tell-me-about
 
 
-[dependency-image]: https://gemnasium.com/badges/github.com/nshimiye/perpetual.svg?style=flat
-[dependency-url]: https://gemnasium.com/github.com/nshimiye/perpetual
+[dependency-image]: https://gemnasium.com/badges/github.com/kgltimes/tell-me-about.svg?style=flat
+[dependency-url]: https://gemnasium.com/github.com/kgltimes/tell-me-about
 
 [climate-image]: https://codeclimate.com/github/kgltimes/tell-me-about/badges/gpa.svg
 [climate-url]: https://codeclimate.com/github/kgltimes/tell-me-about
