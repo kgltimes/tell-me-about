@@ -1,5 +1,4 @@
 'use strict';
-const moxios = require('moxios');
 const TellMeAbout = require('../../es5/index');
 
 const event = {
@@ -32,30 +31,21 @@ const context = {
 
 describe('tell me about', () => {
     
-    // required by axios
-    // beforeEach(function () {
-    //     moxios.install()
-    // });
-
-    // afterEach(function () {
-    //     moxios.uninstall()
-    // });
-
-
     test('Finds Information about Rwanda', () => {
 
-        (new Promise((resolve, reject) => {
+        return (new Promise((resolve, reject) => {
             context.succeed = (s) => resolve(s);
             context.fail = (e) => reject(e);
             return TellMeAbout.handler(event, context);
         }))
             .then(output => {
                 console.log('SUCCESS', output);
-                expect(output.response).toBe(expect.stringMatching(/africa/i));
+                expect(output.dialogAction.message.content).toMatch(/Central and East Africa/i);
             })
             .catch(e => {
                 console.log('FAIL', e);
             });
+
     });
 
 });

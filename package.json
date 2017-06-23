@@ -13,7 +13,7 @@
     "build": "npm run tsc:compile && npm run rollup:build",
     "create": "npm run build && claudia create --name tell-me-about-lex --profile ${AWS_PROFILE} --region us-east-1 --handler es5/index.handler",
     "update": "npm run build && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
-    "test-lambda": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
+    "claudia:test": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
     "test": "npm run build && jest"
   },
   "keywords": [],
