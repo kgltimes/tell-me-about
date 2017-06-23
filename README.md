@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/kgltimes/tell-me-about.svg?branch=master)](https://travis-ci.org/kgltimes/tell-me-about)
 
+[![MIT License][license-image]][license-url]
+
 Bot that explains to people important terms (such as famous people and place), that they find while reading news.
 
 ## Development
@@ -30,3 +32,7 @@ I recomend looking through the `package.json` to understand each command
 export AWS_PROFILE=<profile-name>
 ```
 * Deploy the lambda function by typing `npm run create`
+
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
