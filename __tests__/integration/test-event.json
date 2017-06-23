@@ -1,0 +1,10 @@
+{
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "userId": "vnk1v2paszc7ti0op1omwh7ko64zybcp",
+    "sessionAttributes": null,
+    "bot": { "name": "TopTenLex", "alias": null, "version": "$LATEST" },
+    "outputDialogMode": "Text",
+    "currentIntent": { "name": "TellMeAbout", "slots": {}, "confirmationStatus": "None" },
+    "inputTranscript": "tell me about Kagame"
+}
