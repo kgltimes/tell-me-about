@@ -6,3 +6,6 @@ node_modules
 es5
 es6/*.js
 es6/**/*.js
+
+# testing
+coverage
