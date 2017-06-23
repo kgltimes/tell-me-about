@@ -14,7 +14,7 @@
     "create": "npm run build && claudia create --name tell-me-about-lex --profile ${AWS_PROFILE} --region us-east-1 --handler es5/index.handler",
     "update": "npm run build && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
     "test-lambda": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
-    "test": "jest"
+    "test": "npm run build && jest"
   },
   "keywords": [],
   "author": "Marcellin Nshimiyimana <nmarcellin2@gmail.com>",
@@ -36,5 +36,11 @@
   },
   "dependencies": {
     "axios": "^0.16.2"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ]
   }
 }

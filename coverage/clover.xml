@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1498187579730" clover="3.2.0">
+  <project timestamp="1498187579730" name="All files">
+    <metrics statements="1" coveredstatements="1" conditionals="55" coveredconditionals="16" methods="34" coveredmethods="13" elements="90" coveredelements="30" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1">
+      <file name="index.js" path="/Volumes/profession/mystery-home/products/mister-trainer/lambda-functions/tell-me-about/es5/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="55" coveredconditionals="16" methods="34" coveredmethods="13"/>
+        <line num="1" count="10" type="cond" truecount="16" falsecount="39"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
