@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/kgltimes/tell-me-about.svg?branch=master)](https://travis-ci.org/kgltimes/tell-me-about)
 
-[![MIT License][license-image]][license-url]
+[![MIT License][license-image]][license-url] [![Code Climate][climate-image]][climate-url]
 
 Bot that explains to people important terms (such as famous people and place), that they find while reading news.
 
@@ -33,6 +33,9 @@ export AWS_PROFILE=<profile-name>
 ```
 * Deploy the lambda function by typing `npm run create`
 
+
+[climate-image]: https://codeclimate.com/github/kgltimes/tell-me-about/badges/gpa.svg
+[climate-url]: https://codeclimate.com/github/kgltimes/tell-me-about
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
