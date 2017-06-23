@@ -14,7 +14,9 @@
     "create": "npm run build && claudia create --name tell-me-about-lex --profile ${AWS_PROFILE} --region us-east-1 --handler es5/index.handler",
     "update": "npm run build && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
     "claudia:test": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
-    "test": "npm run build && jest"
+    "test": "npm run build && jest",
+    "remap-istanbul:remap": "remap-istanbul -i coverage/coverage-final.json -t html -o html-report",
+    "remap-istanbul:coverage": "npm test -- --coverage && npm run remap-istanbul:remap"
   },
   "keywords": [],
   "author": "Marcellin Nshimiyimana <nmarcellin2@gmail.com>",
@@ -27,11 +29,15 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-latest": "^6.24.1",
     "claudia": "^2.13.0",
+    "intern": "^3.4.5",
     "jest": "^20.0.4",
+    "jest-sourcemaps": "^1.0.1",
+    "remap-istanbul": "^0.9.5",
     "rollup": "^0.43.0",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^2.0.1",
     "typescript": "^2.3.4"
   },
@@ -41,9 +47,9 @@
   "jest": {
     "coverageReporters": [
       "lcov",
-      "text"
+      "text",
+      "json"
     ],
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "testEnvironment": "jest-sourcemaps/lib/node-env"
   }
 }

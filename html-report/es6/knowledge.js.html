@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for es6/knowledge.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">es6/</a> knowledge.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25.37% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>17/67</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">17.78% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">37.04% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">26.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as axios from './custom-axios';
+import { MRTRAINER_HOST_ADDRESS, TOPTEN_HOST_ADDRESS } from './config';
+/*
+  Generated class for the Knowledge provider.
+  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
+  for more info on providers and Angular 2 DI.
+*/
+export class KnowledgeProvider {
+    constructor() {
+        console.log('Hello Knowledge Provider');
+        this.mrtrainer_host_address = MRTRAINER_HOST_ADDRESS;
+        // START INIT
+        this.prefixList = ['tell me about', 'who is', 'what is'];
+        this.topten_host_address = TOPTEN_HOST_ADDRESS;
+        this.qa_logger_url = `${this.topten_host_address}/api/v1/definitions/add`;
+        // END INIT
+    }
+    // START QA-PAIR
+    // respond to questions
+    // - limited number of questions
+    // - save a question along with the device-id
+    // - be able to provide a log of asked questions
+    findAnswer(<span class="missing-if-branch" title="if path not taken" >I</span>question) {
+        if (!this._hasValidPrefix(this.prefixList, question)) <span class="cstat-no" title="statement not covered" >{</span>
+            let ok = false, response = 'Questions must start with "who is" or "what is", please try again!';
+            return Promise.resolve({ ok, question, response });
+        }
+        let searchKeyword = this._removePrefix(this.prefixList, question);
+        let url = `${this.mrtrainer_host_address}/tell-me-about/api/v1/definition?text=${searchKeyword}`;
+        return this._makeHttpGetRequest(url)
+            .then(result =&gt; {
+            console.log('knowledge - findAnswer --&gt;', result);
+            // @TODO save the qa pair along with the device id
+            let { ok, question, response } = result;
+            return { ok, question, response };
+        })
+            .catch(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e =&gt; ({ ok: false, question, response: (e.message || '</span></span>failed') }));
+    }
+    /**
+     * make sure the provided string is in the format accepted as a question
+     */
+    _hasValidPrefix(prefixList, phrase = <span class="branch-1 cbranch-no" title="branch not covered" >'') {</span>
+        return prefixList.some(prefix =&gt; phrase.trim().toLowerCase().search(prefix) === 0);
+    }
+    _removePrefix(prefixList, phrase = <span class="branch-1 cbranch-no" title="branch not covered" >'') {</span>
+        let prefix = prefixList.find(p =&gt; phrase.trim().toLowerCase().search(p) === 0);
+        return phrase.trim().toLowerCase()
+            .replace(prefix || <span class="branch-1 cbranch-no" title="branch not covered" >'', </span>'')
+            .replace('\?', '').trim();
+        // @TODO we should remove the question mark too
+    }
+    // END QA-PAIR
+    // save the 10 articles/audio/videos links found today
+    // parse the sentence(title, description) to get the question of the day
+    // fetch old articles day-by-day
+    // save user provided links
+    _makeHttpGetRequest(get_url) {
+        return axios.get(get_url)
+            .then((res) =&gt; {
+            console.log('http res', res.data);
+            let dataJson = res.data;
+            // debugger;
+            return dataJson;
+        })
+            .catch(this.handleError);
+    }
+    _makeHttpPostRequest(post_url, <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >body) {</span></span>
+        // let body = JSON.stringify(post_data);
+        // let headers = new Headers({ 'Content-Type': 'application/json' });
+        let headers = [{ 'Content-Type': 'application/json' }];
+        // let options = new RequestOptions({ headers: headers });
+        return axios.post(post_url, body)
+            .then((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >res) =&gt; {</span></span>
+            console.log('http res', res.data);
+            let dataJson = res.data;
+            // debugger;
+            return dataJson;
+        })
+            .catch(this.handleError);
+    }
+    // also defined in application.ts
+    handleError(<span class="fstat-no" title="function not covered" >error) {</span>
+        // In a real world app, we might use a remote logging infrastructure
+        // We'd also dig deeper into the error to get a better message
+        let message = (<span class="cstat-no" title="statement not covered" >error.message) ? error.message :</span>
+            error.status ? `${error.status} - ${error.statusText}` : <span class="cstat-no" title="statement not covered" >'Unkown error, maybe you are offline!';</span>
+        console.log('error ----&gt;', error, message); // log to console instead
+        return Promise.reject({ ok: false, message }); //Observable.throw(errMsg);
+    }
+    /**
+     * I will get the id object from the inside
+     */
+    logQAResult(question, <span class="fstat-no" title="function not covered" >answer) {</span>
+        let <span class="cstat-no" title="statement not covered" >deviceId, <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>appHash;</span></span></span>
+        try {
+            deviceId = JSON.stringify(window.navigator.userAgent);
+        }
+        catch (<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >e) { }</span></span>
+        try {
+            appHash = Math.random().toString().replace('0.', '');
+            // save appHash in a cookie
+            // this.storage.set('topten-hash', appHash);
+            console.log('topten-hash', appHash);
+        }
+        catch (e) { }
+        let url = `${<span class="cstat-no" title="statement not covered" >this.topten_host_address}/api/v1/ask-question?q=${q</span>uestion}`;
+        // store appHash in a cookie or localstorage
+        let origin = { deviceId, appHash };
+        let meta = { <span class="cstat-no" title="statement not covered" >url };</span>
+        let <span class="cstat-no" title="statement not covered" >data = { question, answer, origin, meta };</span>
+        return this._makeHttpPostRequest(this.qa_logger_url, data)
+            .then(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >result =&gt; {</span></span>
+            console.log('knowledge - logQAResult --&gt;', result);
+            // @TODO save the qa pair along with the device id
+            return result;
+        })
+            .catch(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e =&gt; ({ ok: false, question, answer: (e.message || '</span></span>failed') }));
+    }
+    findDailyQuestion(title, <span class="fstat-no" title="function not covered" >description) {</span>
+        // return new Promise((rs, rj) =&gt; {
+        // let body = JSON.stringify({ name });
+        // let headers = new Headers({ 'Content-Type': 'text/html' });
+        // let options = new RequestOptions({ headers: headers });
+        // let url = `${this.mrtrainer_host_address}/top-ten/api/v1/text-analysis?text=${description}`
+        let inputValues = <span class="cstat-no" title="statement not covered" >encodeURIComponent(`${title}. ${d</span>escription}`);
+        let url = `${this.mrtrainer_host_address}/top-ten/api/v1/text-analysis?text=${inputValues}`;
+        let self = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >this;</span></span>
+        return axios.get(url)
+            .then((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >output) =&gt; {</span></span>
+            // @TODO add CORS header to the server
+            console.log('[HeadlinePage] findRealSource', output.headers, output.data);
+            let entities = <span class="cstat-no" title="statement not covered" >output.<span class="cstat-no" title="statement not covered" >d</span>ata;</span>
+            if (entities.length &amp;&amp; entities.length &gt; 0) {
+                entities = entities.filter((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e) =&gt; !!e.u</span></span>rl); // only entities with source are important
+                let <span class="cstat-no" title="statement not covered" >people = entities.filter((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e) =&gt; e.t</span></span></span>ype === 'PERSON'), // try people first
+                locations = <span class="cstat-no" title="statement not covered" >entities.filter((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e) =&gt; e.t</span></span></span>ype === 'LOCATION'), // then try locations
+                arts = <span class="cstat-no" title="statement not covered" >entities.filter((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e) =&gt; e.t</span></span></span>ype === 'WORK_OF_ART'), // then try work_of_art
+                events = <span class="cstat-no" title="statement not covered" >entities.filter((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e) =&gt; e.t</span></span></span>ype === 'EVENT'), // then try work_of_art
+                organizations = <span class="cstat-no" title="statement not covered" >entities.filter((<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >e) =&gt; e.<span class="cstat-no" title="statement not covered" >t</span></span></span>ype === 'ORGANIZATION'); // then try work_of_art</span>
+                people = people.length ? people : null;
+                arts = arts.length ? arts : null;
+                events = events.length ? events : null;
+                locations = locations.length ? locations : null;
+                organizations = organizations.length ? organizations : null;
+                entities = { people, arts, events, locations, organizations };
+            }
+            // Object.keys(entities);
+            // let ekeys = JSON.parse(JSON.stringify(Object.keys(entities)));
+            // @TODO use shuffling algorithm from rss provider
+            // self._shuffle(ekeys);
+            // let key = ekeys[0];
+            let selectedEntities = <span class="cstat-no" title="statement not covered" >entities.people || entities.arts || entities.events || entities.<span class="cstat-no" title="statement not covered" >l</span>ocations || [];</span>
+            console.log('selectedEntities', entities.people, entities.arts, entities.events, entities.locations);
+            let prefix, <span class="cstat-no" title="statement not covered" >value, <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span>source;</span></span>
+            if (selectedEntities.length &amp;&amp; selectedEntities.length &gt; 0) <span class="cstat-no" title="statement not covered" >{</span>
+                self._shuffle(selectedEntities);
+                let selectedEntity = <span class="cstat-no" title="statement not covered" >selectedEntities[<span class="cstat-no" title="statement not covered" >0</span>];</span>
+                // the prefix depends on the type of the selected entity
+                prefix = (selectedEntity.type === 'PERSON') ? 'Who is' : 'What is';
+                value = `${prefix} ${selectedEntity.value}?`;
+                source = selectedEntity.<span class="cstat-no" title="statement not covered" >url;</span>
+            }
+            return { value, source, timeNow: new Date() };
+        });
+        // .toPromise();
+    }
+    // START help functions
+    _shuffle(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >inputArray) {</span></span>
+        let len = inputArray.length;
+        for (let i = 0; i &lt; inputArray.length; i++) {
+            // get a random number between i and inputArray.length(not included)
+            let random = <span class="cstat-no" title="statement not covered" >this._getRandomInt(i, l</span>en);
+            // swap element at i with element at random
+            let tmp = <span class="cstat-no" title="statement not covered" >inputArray[<span class="cstat-no" title="statement not covered" >i</span>];</span>
+            inputArray[i] = inputArray[random];
+            inputArray[random] = <span class="cstat-no" title="statement not covered" >tmp;</span>
+        }
+        return inputArray;
+    }
+    _getRandomInt(min, <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >max) {</span></span>
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jun 23 2017 18:34:07 GMT-0400 (EDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
