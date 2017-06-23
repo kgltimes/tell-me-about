@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/kgltimes/tell-me-about.svg?branch=master)](https://travis-ci.org/kgltimes/tell-me-about)
 
-[![MIT License][license-image]][license-url] [![Code Climate][climate-image]][climate-url]
+  [![Build Status][travis-image]][travis-url] [![Dependency Status][dependency-image]][dependency-url] [![Code Climate][climate-image]][climate-url] [![MIT License][license-image]][license-url]
 
 Bot that explains to people important terms (such as famous people and place), that they find while reading news.
 
@@ -33,6 +33,13 @@ export AWS_PROFILE=<profile-name>
 ```
 * Deploy the lambda function by typing `npm run create`
 
+
+[travis-image]: https://travis-ci.org/kgltimes/tell-me-about.svg?branch=master
+[travis-url]: https://travis-ci.org/kgltimes/tell-me-about
+
+
+[dependency-image]: https://gemnasium.com/badges/github.com/nshimiye/perpetual.svg?style=flat
+[dependency-url]: https://gemnasium.com/github.com/nshimiye/perpetual
 
 [climate-image]: https://codeclimate.com/github/kgltimes/tell-me-about/badges/gpa.svg
 [climate-url]: https://codeclimate.com/github/kgltimes/tell-me-about
