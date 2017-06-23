@@ -13,7 +13,8 @@
     "build": "npm run tsc:compile && npm run rollup:build",
     "create": "npm run build && claudia create --name tell-me-about-lex --profile ${AWS_PROFILE} --region us-east-1 --handler es5/index.handler",
     "update": "npm run build && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
-    "test": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json"
+    "test-lambda": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Marcellin Nshimiyimana <nmarcellin2@gmail.com>",
@@ -25,6 +26,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-latest": "^6.24.1",
     "claudia": "^2.13.0",
+    "jest": "^20.0.4",
+    "moxios": "^0.4.0",
     "rollup": "^0.43.0",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-node-resolve": "^3.0.0",
