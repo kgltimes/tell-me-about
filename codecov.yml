@@ -14,12 +14,8 @@ coverage:
     changes: no
 
 parsers:
-  gcov:
-    branch_detection:
-      conditional: yes
-      loop: yes
-      method: no
-      macro: no
+  javascript:
+    enable_partials: yes
 
 comment:
   layout: "reach, diff, flags, files, footer"
