@@ -7,7 +7,7 @@ import sourcemaps from 'rollup-plugin-sourcemaps';
 export default {
   entry: 'es6/index.js',
   format: 'cjs',
-  sourceMap: true,  
+  sourceMap: 'inline',  
   external: ['node-fetch'],
   plugins: [
     resolve({jsnext: true}),

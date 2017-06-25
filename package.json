@@ -15,10 +15,7 @@
     "update": "npm run build && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
     "claudia:test": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
     "test": "npm run build && jest",
-    "remap-istanbul:remap": "remap-istanbul -i coverage/coverage-final.json -t html -o html-report",
-    "remap-istanbul:coverage-html": "npm test -- --coverage && npm run remap-istanbul:remap",
-    "remap-istanbul:coverage": "cat coverage/coverage-final.json | ./node_modules/.bin/remap-istanbul -o coverage/coverage.json",
-    "coverage": "npm test -- --coverage && npm run remap-istanbul:coverage"
+    "coverage": "npm test -- --coverage"
   },
   "keywords": [],
   "author": "Marcellin Nshimiyimana <nmarcellin2@gmail.com>",
@@ -33,8 +30,6 @@
     "claudia": "^2.13.0",
     "intern": "^3.4.5",
     "jest": "^20.0.4",
-    "jest-sourcemaps": "^1.0.1",
-    "remap-istanbul": "^0.9.5",
     "rollup": "^0.43.0",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.0.2",
@@ -52,6 +47,7 @@
       "text",
       "json"
     ],
-    "testEnvironment": "jest-sourcemaps/lib/node-env"
+    "coverageDirectory": "coverage",
+    "mapCoverage": true
   }
 }
