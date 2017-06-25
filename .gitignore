@@ -5,7 +5,9 @@ node_modules
 # build files
 es5
 es6/*.js
+es6/*.map
 es6/**/*.js
+es6/**/*.map
 
 # testing
 coverage
