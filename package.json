@@ -10,9 +10,11 @@
     "rollup": "rollup",
     "tsc:compile": "tsc",
     "rollup:build": "rollup -c",
+    "rollup:build-prod": "rollup --config rollup.config.prod.js",
     "build": "npm run tsc:compile && npm run rollup:build",
-    "create": "npm run build && claudia create --name tell-me-about-lex --profile ${AWS_PROFILE} --region us-east-1 --handler es5/index.handler",
-    "update": "npm run build && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
+    "build-prod": "npm run tsc:compile && npm run rollup:build-prod",
+    "create": "npm run build-prod && claudia create --name tell-me-about-lex --profile ${AWS_PROFILE} --region us-east-1 --handler es5/index.handler",
+    "update": "npm run build-prod && claudia update --handler es5/index.handler --profile ${AWS_PROFILE}",
     "claudia:test": "claudia test-lambda --profile ${AWS_PROFILE} --event __tests__/integration/test-event.json",
     "test": "npm run build && jest",
     "coverage": "npm test -- --coverage"
