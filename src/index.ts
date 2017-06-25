@@ -22,7 +22,10 @@ export const handler =  (event: {[key: string]: any}, context: {[key: string]: a
   return knowledgeProvider.findAnswer(event.inputTranscript)
   .then(answer => { // answer = {ok, question, response }
     response.dialogAction.message.content = answer.response
-    context.succeed(response)
+    return context.succeed(response)
   })
-  .catch(() => context.succeed(response))
+  .catch((e: Error) => {
+    console.log(e)
+    return context.succeed(response)
+  })
 }
